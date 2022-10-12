@@ -6,6 +6,10 @@
 <title>Cout Demo	</title>
 </head>
 <body>
-<c:out value="${10+20}"></c:out>
+	<c:out value="${10+20}"/>
+	<c:set var="testScore" value="${80}" scope="session"/>
+	<c:out value="${testScore}"/>
+	<c:remove var="testScore"/>
+	After removal<c:out value="${testScore}"/>
 </body>
 </html>
